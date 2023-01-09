@@ -13,6 +13,19 @@
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
+      <script>
+  let body = document.querySelector("body");
+  let messages = ["Message 1", "Message 2", "Message 3", "Message 4", "Message 5"];
+
+  body.addEventListener("click", function() {
+    for (let i = 0; i < messages.length; i++) {
+      let message = document.createElement("article");
+      message.classList.add("message");
+      message.textContent = messages[i];
+      body.appendChild(message);
+    }
+  });
+</script>
     </div>
   </body>
 </html>
